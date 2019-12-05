@@ -12,5 +12,12 @@ class ReviewCell: UITableViewCell {
     
     @IBOutlet weak var reviewBookCover: UIImageView!
     @IBOutlet weak var reviewBookTitle: UILabel!
-    //add a review sample?
+    //add a review sample?=
+    
+    
+    
+    func configure(_ book: Book) {
+        reviewBookCover.image = book.name
+        reviewBookTitle.text = book.title
+    }
 }

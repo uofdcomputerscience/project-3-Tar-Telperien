@@ -10,10 +10,26 @@ import UIKit
 
 class BookDetailViewController: UIViewController {
     
+    @IBOutlet weak var bookCover: UIImageView!
     
+    @IBOutlet weak var titleLabel: UILabel!
     
+    @IBOutlet weak var authorLabel: UILabel!
     
+    @IBOutlet weak var publishedLabel: UILabel!
     
+    var titleText: String?
+    var authorText: String?
+    var publishedText: String?
+    var coverURL: URL?
     
-    
+    override func viewDidLoad(){
+        titleLabel.text = initialTitle
+        service?.getImage(for: initialURL!) { (url, image) in
+            DispatchQueue.main.async {
+                self.largeImage.image = image
+            }
+        }
+        
+    }
 }
