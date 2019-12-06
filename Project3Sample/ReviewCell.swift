@@ -10,14 +10,11 @@ import UIKit
 
 class ReviewCell: UITableViewCell {
     
-    @IBOutlet weak var reviewBookCover: UIImageView!
     @IBOutlet weak var reviewBookTitle: UILabel!
-    //add a review sample?=
+    @IBOutlet weak var reviewerName: UILabel!
     
-    
-    
-    func configure(_ book: Book) {
-        reviewBookCover.image = book.name
-        reviewBookTitle.text = book.title
+    func configure(_ review: Review, rService: ReviewService) {
+        reviewBookTitle.text = review.title
+        reviewerName.text = review.reviewer
     }
 }

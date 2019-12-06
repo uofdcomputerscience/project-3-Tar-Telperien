@@ -33,24 +33,13 @@ class BookListViewController: UIViewController {
 extension BookListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let selectedBook = books[indexPath.item]
-        let bookDetail = storyboard?.instantiateViewController(identifier: "BookDetailViewController") as! BookDetailViewController
-    }
-}
-
-extension ViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let selectedObject = items[indexPath.item]
-        let detail = storyboard?.instantiateViewController(identifier: "DetailViewController") as! DetailViewController
-//        detail.titleLabel.text = selectedObject.name
-//        service.getImage(for: selectedObject.imageURL) { (url, image) in
-//            DispatchQueue.main.async {
-//                detail.largeImage.image = image
-//            }
-//        }
-        detail.initialTitle = selectedObject.name
-        detail.initialURL = selectedObject.imageURL
-        detail.service = service
-        navigationController?.pushViewController(detail, animated: true)
+        let bookDetail = storyboard?.instantiateViewController(withIdentifier: "BookDetailViewController") as! BookDetailViewController
+        bookDetail.titleText = selectedBook.title
+        bookDetail.authorText = selectedBook.author
+        bookDetail.publishedText = selectedBook.published
+        service.image(for: selectedBook) { (book, image) in
+            bookDetail.coverImage = image
+        }
     }
 }
 

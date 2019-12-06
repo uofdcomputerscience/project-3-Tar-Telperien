@@ -21,15 +21,13 @@ class BookDetailViewController: UIViewController {
     var titleText: String?
     var authorText: String?
     var publishedText: String?
-    var coverURL: URL?
+    var coverImage: UIImage?
+    var service: BookService?
     
     override func viewDidLoad(){
-        titleLabel.text = initialTitle
-        service?.getImage(for: initialURL!) { (url, image) in
-            DispatchQueue.main.async {
-                self.largeImage.image = image
-            }
-        }
-        
+        titleLabel.text = titleText
+        authorLabel.text = authorText
+        publishedLabel.text = publishedText
+        bookCover.image = coverImage
     }
 }
