@@ -12,13 +12,16 @@ class BookListViewController: UIViewController {
     
     @IBOutlet weak var bookListView: UITableView!
     
+    @IBOutlet weak var refreshBooks: UIButton!
+    
     var books: [Book] = []
     let service = BookService()
+    var bookID: Int? //this is to be used with the ReviewsOfOneBookController if needed. Build custom init function and hand stuff to it, perhaps?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         service.fetchBooks {
-            self.service.books = self.books
+            self.books = self.service.books
         }
         DispatchQueue.main.async {
             self.bookListView.reloadData()
@@ -27,6 +30,14 @@ class BookListViewController: UIViewController {
         bookListView.delegate = self
     }
     
+    @IBAction func refreshTapped(_ sender: Any) {
+        DispatchQueue.main.async {
+            self.service.fetchBooks {
+                self.books = self.service.books
+            }
+            self.bookListView.reloadData()
+        }
+    }
 }
 
 
@@ -53,6 +64,4 @@ extension BookListViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "BookCell", for: indexPath) as! BookCell
         return cell
     }
-    
-    
 }

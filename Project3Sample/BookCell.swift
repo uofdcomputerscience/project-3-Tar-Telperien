@@ -12,6 +12,7 @@ class BookCell: UITableViewCell {
     
     @IBOutlet weak var bookTitle: UILabel!
     @IBOutlet weak var bookCover: UIImageView!
+    @IBOutlet weak var seeReviewsButton: UIButton!
     
     func configure(book: Book, service: BookService) {
         bookTitle.text = book.title
@@ -19,4 +20,6 @@ class BookCell: UITableViewCell {
             self.bookCover.image = image
         }
     }
+    
+    
 }
