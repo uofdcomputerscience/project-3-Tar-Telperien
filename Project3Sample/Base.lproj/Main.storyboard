@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="49" translatesAutoresizingMaskIntoConstraints="NO" id="M9k-Ay-ECd">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="M9k-Ay-ECd">
                                 <rect key="frame" x="96" y="110" width="223.5" height="336.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View, Add, and Review Books" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TV5-Nm-Jeq">
@@ -26,14 +26,14 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WwV-dQ-Jgv">
-                                        <rect key="frame" x="67.5" y="69.5" width="89" height="109"/>
+                                        <rect key="frame" x="67.5" y="50.5" width="89" height="166"/>
                                         <state key="normal" title="List of Books"/>
                                         <connections>
                                             <segue destination="dMM-Ue-kCg" kind="show" id="dLE-dS-mCG"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJq-79-KNF">
-                                        <rect key="frame" x="60.5" y="227.5" width="103" height="30"/>
+                                        <rect key="frame" x="60.5" y="246.5" width="103" height="30"/>
                                         <state key="normal" title="List of Reviews"/>
                                         <connections>
                                             <segue destination="KTE-Dj-Ufp" kind="show" id="Av1-Ue-KBI"/>
