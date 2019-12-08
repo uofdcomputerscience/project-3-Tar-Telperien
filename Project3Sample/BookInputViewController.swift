@@ -44,8 +44,8 @@ class BookInputViewController: UIViewController {
     }
     
     @IBAction func addBookPressed(_ sender: UIButton) {
-        var newBook = Book(title: titleText, author: authorText, published: dateText, imageURLString: urlText)
-        service?.createBook(book: newBook, completion: nil)
+        let newBook = Book(id: nil, title: titleText!, author: authorText!, published: dateText!, imageURLString: urlText!)
+        service?.createBook(book: newBook, completion:{})
     }
 }
 

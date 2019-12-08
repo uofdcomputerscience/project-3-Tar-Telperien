@@ -19,7 +19,7 @@ class ReviewsOfOneBookViewController: UIViewController {
         super.viewDidLoad()
         service.fetchReviews {
             self.reviews = self.service.reviews.filter { (review) -> Bool in
-                    review.bookId = 12 //MAGIC NUMBER THAT SHOULD NOT BE 12!!!! FIND WAY TO GET BOOK ID FROM CLICKED CELL!!!!
+                    review.bookId == 12 //MAGIC NUMBER THAT SHOULD NOT BE 12!!!! FIND WAY TO GET BOOK ID FROM CLICKED CELL!!!!
                 }
         }
         DispatchQueue.main.async {
@@ -49,6 +49,4 @@ extension ReviewsOfOneBookViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ReviewCell", for: indexPath) as! ReviewCell
         return cell
     }
-    
-    
 }

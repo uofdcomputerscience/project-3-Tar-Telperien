@@ -23,6 +23,7 @@ class ReviewInputViewController: UIViewController {
     var reviewText: String?
     var newReview: Review?
     var service: ReviewService?
+    var bookID: Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,8 +40,8 @@ class ReviewInputViewController: UIViewController {
     }
     
     @IBAction func addReviewPressed(_ sender: UIButton){
-        var newReview: Review = Review(bookId: <#T##Int#>, date: Calendar.autoupdatingCurrent, reviewer: reviewerText, title: titleText, body: reviewText)
-        service?.createReview(review: newReview, completion: nil)
+        let newReview: Review = Review(id: nil, bookId: 12, date: Date(), reviewer: reviewerText!, title: titleText!, body: reviewText!) //replace 12 with something else
+        service?.createReview(review: newReview, completion:{})
     }
 }
 

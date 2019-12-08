@@ -21,9 +21,9 @@ class ReviewListViewController: UIViewController {
         super.viewDidLoad()
         service.fetchReviews {
             self.reviews = self.service.reviews
-        }
-        DispatchQueue.main.async {
-            self.reviewListView.reloadData()
+            DispatchQueue.main.async {
+                self.reviewListView.reloadData()
+            }
         }
         reviewListView.dataSource = self
         reviewListView.delegate = self
@@ -55,6 +55,7 @@ extension ReviewListViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ReviewCell", for: indexPath) as! ReviewCell //build a review cell
+        cell.configure(reviews[indexPath.item], rService: service)
         return cell
     }
     

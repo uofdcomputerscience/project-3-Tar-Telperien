@@ -16,15 +16,14 @@ class BookListViewController: UIViewController {
     
     var books: [Book] = []
     let service = BookService()
-    var bookID: Int? //this is to be used with the ReviewsOfOneBookController if needed. Build custom init function and hand stuff to it, perhaps?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         service.fetchBooks {
             self.books = self.service.books
-        }
-        DispatchQueue.main.async {
-            self.bookListView.reloadData()
+            DispatchQueue.main.async {
+                self.bookListView.reloadData()
+            }
         }
         bookListView.dataSource = self
         bookListView.delegate = self
@@ -48,6 +47,7 @@ extension BookListViewController: UITableViewDelegate {
         bookDetail.titleText = selectedBook.title
         bookDetail.authorText = selectedBook.author
         bookDetail.publishedText = selectedBook.published
+        bookDetail.id = selectedBook.id
         service.image(for: selectedBook) { (book, image) in
             bookDetail.coverImage = image
         }
@@ -62,6 +62,7 @@ extension BookListViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "BookCell", for: indexPath) as! BookCell
+        cell.configure(book: books[indexPath.item], service: service)
         return cell
     }
 }
