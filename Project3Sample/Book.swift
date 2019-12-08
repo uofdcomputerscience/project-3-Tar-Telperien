@@ -13,7 +13,7 @@ struct Book: Codable {
     let title: String
     let author: String
     let published: String
-    let imageURLString: String
+    let imageURLString: String?
     
     var imageURL: URL? {
         return URL(string: imageURLString ?? "")
