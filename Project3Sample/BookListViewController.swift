@@ -49,7 +49,9 @@ extension BookListViewController: UITableViewDelegate {
         bookDetail.publishedText = selectedBook.published
         bookDetail.id = selectedBook.id
         service.image(for: selectedBook) { (book, image) in
+            DispatchQueue.main.async {
             bookDetail.coverImage = image
+            }
         }
     }
 }
