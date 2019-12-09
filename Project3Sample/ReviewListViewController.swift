@@ -45,6 +45,7 @@ extension ReviewListViewController: UITableViewDelegate {
         reviewDetail.review = selectedReview.body
         reviewDetail.reviewer = selectedReview.reviewer
         reviewDetail.titleText = selectedReview.title
+        present(reviewDetail, animated: true)
     }
 }
 

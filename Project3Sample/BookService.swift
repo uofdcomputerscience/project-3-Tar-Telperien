@@ -47,7 +47,9 @@ class BookService {
         let task = URLSession(configuration: .default).dataTask(with: imageURL) { [weak self] (data, response, error) in
             guard let data = data else { completion(book, nil); return }
             if let image = UIImage(data: data) {
-                self?.bookImages[imageURL] = image
+        DispatchQueue.main.async {
+                    self?.bookImages[imageURL] = image
+        }
                 completion(book, image)
             } else {
                 completion(book, nil)

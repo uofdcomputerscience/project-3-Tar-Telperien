@@ -53,6 +53,7 @@ extension BookListViewController: UITableViewDelegate {
                 bookDetail.coverImage = image
             }
         }
+        present(bookDetail, animated: true)
     }
 }
 

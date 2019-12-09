@@ -580,7 +580,7 @@
         <!--Book Detail View Controller-->
         <scene sceneID="Zf4-Nf-Tj4">
             <objects>
-                <viewController id="qMi-Ef-MYc" customClass="BookDetailViewController" customModule="TLDR" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BookDetailViewController" id="qMi-Ef-MYc" customClass="BookDetailViewController" customModule="TLDR" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vIR-2y-4gO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
