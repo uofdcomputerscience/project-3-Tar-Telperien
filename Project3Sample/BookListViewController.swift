@@ -50,7 +50,7 @@ extension BookListViewController: UITableViewDelegate {
         bookDetail.id = selectedBook.id
         service.image(for: selectedBook) { (book, image) in
             DispatchQueue.main.async {
-            bookDetail.coverImage = image
+                bookDetail.coverImage = image
             }
         }
     }

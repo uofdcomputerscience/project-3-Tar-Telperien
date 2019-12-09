@@ -546,12 +546,17 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="reviewBookTitle" destination="UgE-Iv-Yde" id="FzD-Va-gxg"/>
-                                            <outlet property="reviewerName" destination="AVy-jZ-H0b" id="tvu-65-sJd"/>
+                                            <outlet property="reviewBookTitle" destination="UgE-Iv-Yde" id="GFp-uI-2Gn"/>
+                                            <outlet property="reviewerName" destination="AVy-jZ-H0b" id="fQe-xD-Cfu"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xci-HA-rAY">
+                                <rect key="frame" x="151" y="796" width="113" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Refresh Reviews"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -563,6 +568,10 @@
                         <viewLayoutGuide key="safeArea" id="4uO-jr-XF2"/>
                     </view>
                     <navigationItem key="navigationItem" id="Apb-G1-pzA"/>
+                    <connections>
+                        <outlet property="refreshReviews" destination="xci-HA-rAY" id="sLw-kg-SCu"/>
+                        <outlet property="reviewListView" destination="CCF-Tn-0cN" id="glF-ZO-vBh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tlp-Ex-NbG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

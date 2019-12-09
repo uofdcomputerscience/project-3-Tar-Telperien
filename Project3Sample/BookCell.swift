@@ -17,7 +17,9 @@ class BookCell: UITableViewCell {
     func configure(book: Book, service: BookService) {
         bookTitle.text = book.title
         service.image(for: book) { (book, image) in
-            self.bookCover.image = image
+            DispatchQueue.main.async {
+                self.bookCover.image = image
+            }
         }
     }
     
