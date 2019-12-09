@@ -33,7 +33,7 @@ class ReviewsOfOneBookViewController: UIViewController {
 extension ReviewsOfOneBookViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let selectedReview = reviews[indexPath.item]
-        let reviewDetail = storyboard?.instantiateViewController(withIdentifier: "ReviewDetailViewController") as! ReviewDetailViewController
+        let reviewDetail = storyboard?.instantiateViewController(withIdentifier: "ReviewDetailViewController2") as! ReviewDetailViewController
         reviewDetail.review = selectedReview.body
         reviewDetail.reviewer = selectedReview.reviewer
         reviewDetail.titleText = selectedReview.title
