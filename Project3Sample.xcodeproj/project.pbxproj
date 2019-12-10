@@ -24,6 +24,7 @@
 		A4002B70239709410040079B /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4002B6F239709410040079B /* BookCell.swift */; };
 		A4002B7223994D140040079B /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4002B7123994D140040079B /* ReviewCell.swift */; };
 		A4002B96239C9CEF0040079B /* ReviewsOfOneBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4002B95239C9CEF0040079B /* ReviewsOfOneBookViewController.swift */; };
+		A4D33F10239FE20D005BAFE4 /* OneBookReviewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D33F0F239FE20D005BAFE4 /* OneBookReviewsCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		A4002B6F239709410040079B /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
 		A4002B7123994D140040079B /* ReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
 		A4002B95239C9CEF0040079B /* ReviewsOfOneBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsOfOneBookViewController.swift; sourceTree = "<group>"; };
+		A4D33F0F239FE20D005BAFE4 /* OneBookReviewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneBookReviewsCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				4670DA8923809A0500487601 /* BookInputViewController.swift */,
 				4670DA8B23809A1C00487601 /* ReviewListViewController.swift */,
 				A4002B7123994D140040079B /* ReviewCell.swift */,
+				A4D33F0F239FE20D005BAFE4 /* OneBookReviewsCell.swift */,
 				4670DA8D23809A2800487601 /* ReviewDetailViewController.swift */,
 				4670DA8F23809A3300487601 /* ReviewInputViewController.swift */,
 				4670DA9123809A3A00487601 /* Book.swift */,
@@ -185,6 +188,7 @@
 				4670DA9223809A3A00487601 /* Book.swift in Sources */,
 				4670DA88238099F800487601 /* BookDetailViewController.swift in Sources */,
 				A4002B7223994D140040079B /* ReviewCell.swift in Sources */,
+				A4D33F10239FE20D005BAFE4 /* OneBookReviewsCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

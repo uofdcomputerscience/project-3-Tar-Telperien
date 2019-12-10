@@ -14,11 +14,14 @@ class ReviewDetailViewController: UIViewController {
     
     @IBOutlet weak var reviewerName: UILabel!
     
+    @IBOutlet weak var bookTitleLabel: UILabel!
+    
     @IBOutlet weak var reviewTitle: UILabel!
     
     var reviewer: String?
     var review: String?
     var titleText: String?
+    var bookTitleText: String?
     var service: ReviewService?
     
     override func viewDidLoad() {

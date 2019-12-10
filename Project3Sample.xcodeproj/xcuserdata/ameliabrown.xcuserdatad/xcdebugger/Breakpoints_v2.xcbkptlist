@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "80BC6344-2F25-4CDB-890A-726FA0B79CD0"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6310E8B4-C867-430C-AB44-AAA087ED2131"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Project3Sample/ReviewsOfOneBookViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "viewWillAppear(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6310E8B4-C867-430C-AB44-AAA087ED2131 - 2b63305f8db12fba"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in TLDR.ReviewsOfOneBookViewController.viewWillAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "TLDR"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ameliabrown/Documents/College/Junior/MobileAppDev/Projects/project-3-Tar-Telperien/Project3Sample/ReviewsOfOneBookViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "31">
+               </Location>
+               <Location
+                  uuid = "6310E8B4-C867-430C-AB44-AAA087ED2131 - d1f136c9e3478e4b"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (TLDR.Review) -&gt; Swift.Bool in closure #1 () -&gt; () in TLDR.ReviewsOfOneBookViewController.viewWillAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "TLDR"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ameliabrown/Documents/College/Junior/MobileAppDev/Projects/project-3-Tar-Telperien/Project3Sample/ReviewsOfOneBookViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D9E4EAA2-5E2B-49CB-831B-0169E013D148"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Project3Sample/ReviewsOfOneBookViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "viewWillAppear(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D9E4EAA2-5E2B-49CB-831B-0169E013D148 - 420d98468ca5144e"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TLDR.ReviewsOfOneBookViewController.viewWillAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "TLDR"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ameliabrown/Documents/College/Junior/MobileAppDev/Projects/project-3-Tar-Telperien/Project3Sample/ReviewsOfOneBookViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "283">
+               </Location>
+               <Location
+                  uuid = "D9E4EAA2-5E2B-49CB-831B-0169E013D148 - 2b63305f8db12fba"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in TLDR.ReviewsOfOneBookViewController.viewWillAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "TLDR"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ameliabrown/Documents/College/Junior/MobileAppDev/Projects/project-3-Tar-Telperien/Project3Sample/ReviewsOfOneBookViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "31">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FC80F98C-6BC1-4552-85BF-B3A6FB6D5FDE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Project3Sample/BookListViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "prepare(for:sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "50FB8368-2D66-48C7-AA05-D135438A4E90"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Project3Sample/ReviewsOfOneBookViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "viewWillAppear(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "50FB8368-2D66-48C7-AA05-D135438A4E90 - 420d98468ca5144e"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TLDR.ReviewsOfOneBookViewController.viewWillAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "TLDR"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ameliabrown/Documents/College/Junior/MobileAppDev/Projects/project-3-Tar-Telperien/Project3Sample/ReviewsOfOneBookViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "445">
+               </Location>
+               <Location
+                  uuid = "50FB8368-2D66-48C7-AA05-D135438A4E90 - e5a6e41de06e9cbb"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; () in TLDR.ReviewsOfOneBookViewController.viewWillAppear(Swift.Bool) -&gt; ()"
+                  moduleName = "TLDR"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ameliabrown/Documents/College/Junior/MobileAppDev/Projects/project-3-Tar-Telperien/Project3Sample/ReviewsOfOneBookViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "52">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A9F283AA-C101-4A17-BF66-C4E14B586C5E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Project3Sample/ReviewsOfOneBookViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "tableView(_:numberOfRowsInSection:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
