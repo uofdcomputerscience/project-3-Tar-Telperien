@@ -28,11 +28,17 @@ class BookDetailViewController: UIViewController {
     var id: Int?
     
     override func viewDidLoad(){
+        super.viewDidLoad()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         titleLabel.text = titleText
         authorLabel.text = authorText
         publishedLabel.text = publishedText
         bookCover.image = coverImage
     }
+
     
     @IBAction func reviewBookPressed(_ sender: Any) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "ReviewInputViewController") as! ReviewInputViewController

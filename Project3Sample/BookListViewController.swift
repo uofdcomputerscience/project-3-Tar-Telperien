@@ -29,6 +29,21 @@ class BookListViewController: UIViewController {
         bookListView.delegate = self
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // the button that was tapped
+        guard let button = sender as? UIButton else { return }
+        // the button is in a view inside the cell, so superview.superview is the cell
+        guard let cell = button.superview?.superview as? UITableViewCell else { return }
+        // get the index from the tableview for that cell.
+        guard let indexPath = bookListView.indexPath(for: cell) else { return }
+        // that gives us an index into the book array.
+        let book = service.books[indexPath.row]
+        // get the destination view controller as a review list vc
+        guard let destination = segue.destination as? ReviewsOfOneBookViewController else { return }
+        // set a variable on that review list vc.
+        destination.book = book
+    }
+    
     @IBAction func refreshTapped(_ sender: Any) {
         DispatchQueue.main.async {
             self.service.fetchBooks {
