@@ -22,8 +22,9 @@ class ReviewDetailViewController: UIViewController {
     var service: ReviewService?
     
     override func viewDidLoad() {
+        super.viewDidLoad()
         reviewerName.text = reviewer
-        reviewText.text = review
         reviewTitle.text = titleText
+        reviewText.text = review
     }
 }

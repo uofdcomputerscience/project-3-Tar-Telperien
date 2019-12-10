@@ -18,6 +18,12 @@ class ReviewInputViewController: UIViewController {
     
     @IBOutlet weak var addReviewButton: UIButton!
     
+    @IBOutlet weak var stackViewBottomConstraint: NSLayoutConstraint!
+    
+    @IBOutlet weak var publishReviewBottomConstraint: NSLayoutConstraint!
+    
+    @IBOutlet weak var publishedReviewTopConstraint: NSLayoutConstraint!
+    
     var reviewerText: String?
     var titleText: String?
     var reviewText: String?
@@ -27,10 +33,18 @@ class ReviewInputViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        reviewBody.delegate = self
         reviewerEntry.delegate = self
         titleEntry.delegate = self
         reviewBody.delegate = self
         service = ReviewService()
+        NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillShowNotification, object: nil, queue: nil) { _ in
+            self.stackViewBottomConstraint.constant = 400
+            self.publishReviewBottomConstraint.constant = 380
+            self.publishedReviewTopConstraint.constant = 370
+            self.updateViewConstraints()
+            self.view.layoutIfNeeded()
+        }
     }
     
     func enableAddReview() {
