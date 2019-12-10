@@ -20,9 +20,9 @@ class ReviewInputViewController: UIViewController {
     
     @IBOutlet weak var stackViewBottomConstraint: NSLayoutConstraint!
     
-    @IBOutlet weak var publishReviewBottomConstraint: NSLayoutConstraint!
-    
     @IBOutlet weak var publishedReviewTopConstraint: NSLayoutConstraint!
+    
+    @IBOutlet weak var publishReviewBottomConstraint: NSLayoutConstraint!
     
     var reviewerText: String?
     var titleText: String?

@@ -383,6 +383,11 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="abX-pf-4My" secondAttribute="trailing" id="QcA-TZ-sLd"/>
+                                    <constraint firstItem="abX-pf-4My" firstAttribute="leading" secondItem="PfX-FY-9ZB" secondAttribute="leading" id="ZJS-7s-Pf5"/>
+                                    <constraint firstItem="abX-pf-4My" firstAttribute="top" secondItem="PfX-FY-9ZB" secondAttribute="top" constant="211.5" id="jOv-A7-4C6"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -460,8 +465,8 @@
                                     <constraint firstItem="x2f-vk-mPs" firstAttribute="leading" secondItem="jRw-q8-O1l" secondAttribute="leading" constant="20" id="YLd-tu-VfG"/>
                                     <constraint firstItem="vH0-dd-h2V" firstAttribute="leading" secondItem="jRw-q8-O1l" secondAttribute="leading" id="Yr4-eU-n7H"/>
                                     <constraint firstItem="wwC-aw-vJ1" firstAttribute="top" secondItem="jRw-q8-O1l" secondAttribute="top" constant="44.5" id="qac-i1-0sq"/>
+                                    <constraint firstAttribute="bottom" secondItem="vH0-dd-h2V" secondAttribute="bottom" id="tHL-Au-XSA"/>
                                     <constraint firstAttribute="trailing" secondItem="x2f-vk-mPs" secondAttribute="trailing" constant="20" id="tLn-aA-2Aw"/>
-                                    <constraint firstAttribute="bottom" secondItem="vH0-dd-h2V" secondAttribute="bottom" id="vqr-HJ-r6d"/>
                                     <constraint firstAttribute="trailing" secondItem="wwC-aw-vJ1" secondAttribute="trailing" constant="20" id="xoQ-MK-zIc"/>
                                     <constraint firstAttribute="bottom" secondItem="x2f-vk-mPs" secondAttribute="bottom" constant="444.5" id="zMP-2k-2lH"/>
                                 </constraints>
@@ -490,13 +495,11 @@
                     <navigationItem key="navigationItem" id="8hz-a3-Enh"/>
                     <connections>
                         <outlet property="addReviewButton" destination="YKY-WH-cIY" id="Fy8-av-r4j"/>
-                        <outlet property="publishButtonConstraint" destination="gUT-2V-6b5" id="ORx-Mc-x1A"/>
-                        <outlet property="publishReviewBottomConstraint" destination="gUT-2V-6b5" id="hCf-Ve-VkT"/>
+                        <outlet property="publishReviewBottomConstraint" destination="gUT-2V-6b5" id="47q-PO-Lgq"/>
                         <outlet property="publishedReviewTopConstraint" destination="PkJ-zc-XWM" id="apl-hb-f7C"/>
                         <outlet property="reviewBody" destination="vH0-dd-h2V" id="OYd-fr-hHA"/>
                         <outlet property="reviewerEntry" destination="wwC-aw-vJ1" id="hAZ-NO-Agr"/>
                         <outlet property="stackViewBottomConstraint" destination="C5g-R7-0HK" id="MOK-z5-Ngc"/>
-                        <outlet property="textViewConstraint" destination="vqr-HJ-r6d" id="TGj-LW-NH9"/>
                         <outlet property="titleEntry" destination="x2f-vk-mPs" id="pkb-Ao-iK1"/>
                     </connections>
                 </viewController>
